@@ -26,13 +26,25 @@ export default async function handler(req, res) {
 
   console.log('Dados recebidos:', { nome_completo, email, telefone });
 
-  await fetch('https://formsubmit.co/ajax/ctt.eleuterio@gmail.com', {
+  await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
+      'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
       'Content-Type': 'application/json',
-      'Accept': 'application/json',
     },
-    body: JSON.stringify({ nome_completo, email, telefone, mensagem }),
+    body: JSON.stringify({
+      from: 'Picolabz Site <onboarding@resend.dev>',
+      to: ['contato@picolabz.com'],
+      subject: `Novo contato de ${nome_completo}`,
+      html: `
+        <h2>Novo contato pelo site</h2>
+        <p><strong>Nome:</strong> ${nome_completo}</p>
+        <p><strong>E-mail:</strong> ${email}</p>
+        <p><strong>Telefone:</strong> ${telefone}</p>
+        <p><strong>Mensagem:</strong></p>
+        <p>${mensagem}</p>
+      `,
+    }),
   });
 
   res.redirect('https://picolabz.com/pages/thanks.html');
