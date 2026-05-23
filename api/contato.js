@@ -3,15 +3,20 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { nome_completo, email, telefone, mensagem } = req.body;
+  const { nome_completo, email, telefone, mensagem } = req.body || {};
 
-  // Envia pro formsubmit usando a variável de ambiente
+  if (!nome_completo || !email || !telefone || !mensagem) {
+    return res.status(400).json({ error: 'Todos os campos são obrigatórios.' });
+  }
+
   await fetch(`https://formsubmit.co/ajax/${process.env.FORM_EMAIL}`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    body: JSON.stringify({ nome_completo, email, telefone, mensagem })
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({ nome_completo, email, telefone, mensagem }),
   });
 
-  // Redireciona para a URL privada
-  return res.redirect(redirectTo);
+  res.redirect(process.env.REDIRECT_URL);
 }
