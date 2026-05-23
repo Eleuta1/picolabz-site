@@ -47,6 +47,15 @@ export default async function handler(req, res) {
     }),
   });
 
-  res.redirect('https://www.picolabz.com/pages/thanks.html');
-
+  // Redirect via HTML em vez de res.redirect()
+  res.setHeader('Content-Type', 'text/html');
+  res.status(200).end(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta http-equiv="refresh" content="0;url=https://www.picolabz.com/pages/thanks.html" />
+      </head>
+      <body>Redirecionando...</body>
+    </html>
+  `);
 }
