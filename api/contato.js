@@ -18,5 +18,5 @@ export default async function handler(req, res) {
     body: JSON.stringify({ nome_completo, email, telefone, mensagem }),
   });
 
-  res.redirect(process.env.REDIRECT_URL);
+  res.redirect('https://picolabz.com/pages/thanks.html');
 }
