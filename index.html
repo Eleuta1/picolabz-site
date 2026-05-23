@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Picolabz — Soluções em Tecnologia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="36" height="36" rx="8" fill="rgba(123,63,228,0.15)"/>
+        <path d="M10 10 L18 6 L26 10 L26 20 L18 24 L10 20 Z" stroke="#9D6FF0" stroke-width="1.5" fill="none"/>
+        <path d="M14 14 L18 12 L22 14 L22 20 L18 22 L14 20 Z" fill="rgba(123,63,228,0.4)"/>
+      </svg>
+      <span class="nav-logo-text">pico<span>labz</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato" class="nav-cta">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+
+      <!-- Left -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Disponível para novos projetos
+        </div>
+
+        <h1 class="hero-title">
+          Tecnologia que<br>
+          <span class="line2">resolve problemas<br>reais.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Da prototipagem à entrega — desenvolvemos soluções em software, hardware e fabricação digital para startups e empresas que querem sair na frente.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">
+            Ver projetos
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contato" class="btn-outline">
+            Falar com a equipe
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: logo + rings -->
+      <div class="hero-visual">
+
+        <!-- Floating tech cards -->
+        <div class="tech-card tc1">
+          <span class="tc-dot purple"></span>
+          Impressão 3D
+        </div>
+        <div class="tech-card tc2">
+          <span class="tc-dot green"></span>
+          Assistencia Técnica
+        </div>
+        <div class="tech-card tc3">
+          <span class="tc-dot silver"></span>
+          Desenvolvimento Web
+        </div>
+        <div class="tech-card tc4">
+          <span class="tc-dot purple"></span>
+          Consultoria de TI
+        </div>
+        <div class="tech-card tc5">
+          <span class="tc-dot green"></span>
+          Suporte Tecnico PJ
+        </div>
+
+        <div class="hex-ring">
+          <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#7B3FE4" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#4B1FA8" stop-opacity="0.2"/>
+              </linearGradient>
+              <linearGradient id="ringGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#B0B8C8" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#B0B8C8" stop-opacity="0.05"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Outer spinning ring -->
+            <g class="ring-spin">
+              <circle cx="210" cy="210" r="195" fill="none" stroke="url(#ringGrad)" stroke-width="1" stroke-dasharray="12 8"/>
+              <!-- Dots on ring -->
+              <circle cx="210" cy="15" r="4" fill="#7B3FE4"/>
+              <circle cx="380" cy="120" r="3" fill="#9D6FF0" opacity="0.7"/>
+              <circle cx="380" cy="300" r="4" fill="#7B3FE4"/>
+              <circle cx="210" cy="405" r="3" fill="#9D6FF0" opacity="0.7"/>
+              <circle cx="40" cy="300" r="4" fill="#7B3FE4"/>
+              <circle cx="40" cy="120" r="3" fill="#9D6FF0" opacity="0.7"/>
+            </g>
+
+            <!-- Middle ring -->
+            <g class="ring-spin-rev">
+              <circle cx="210" cy="210" r="155" fill="none" stroke="url(#ringGrad2)" stroke-width="1" stroke-dasharray="6 14"/>
+              <circle cx="210" cy="55" r="3" fill="#B0B8C8" opacity="0.5"/>
+              <circle cx="352" cy="132" r="2.5" fill="#B0B8C8" opacity="0.5"/>
+              <circle cx="352" cy="288" r="3" fill="#B0B8C8" opacity="0.5"/>
+              <circle cx="210" cy="365" r="2.5" fill="#B0B8C8" opacity="0.5"/>
+              <circle cx="68" cy="288" r="3" fill="#B0B8C8" opacity="0.5"/>
+              <circle cx="68" cy="132" r="2.5" fill="#B0B8C8" opacity="0.5"/>
+            </g>
+
+            <!-- Inner glow circle -->
+            <circle cx="210" cy="210" r="110" fill="rgba(123,63,228,0.04)" stroke="rgba(123,63,228,0.2)" stroke-width="1"/>
+          </svg>
+
+          <!-- Logo in center -->
+          <div class="logo-center">
+            <img src="./img/PICOLABZ_LOGOT.png" alt="Picolabz Logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num" data-target="6">0</div>
+        <div class="stat-label">Projetos entregues</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="3">0</div>
+        <div class="stat-label">Clientes ativos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="3" data-suffix="+">0</div>
+        <div class="stat-label">Anos de experiência</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="100" data-suffix="%">0</div>
+        <div class="stat-label">Satisfação dos clientes</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="servicos">
+    <div class="section-header">
+      <div class="section-tag">// o que fazemos</div>
+      <h2 class="section-title">Nossas <span>soluções</span></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <div class="service-name">Desenvolvimento de Software</div>
+        <div class="service-desc">Sistemas web, APIs, dashboards e automações customizadas para o seu negócio.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖨️</div>
+        <div class="service-name">Solução em Impressão 3D</div>
+        <div class="service-desc">Peças personalizadas por impressão 3D com qualidade e precisão.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛠️</div>
+        <div class="service-name">Assistência Técnica</div>
+        <div class="service-desc">Soluções para notebooks, desktops e equipamentos de informática.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <div class="service-name">Automação de Processos</div>
+        <div class="service-desc">Integração de sistemas, bots e fluxos inteligentes para ganhar escala com menos esforço.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖧</div>
+        <div class="service-name">Consultoria de TI</div>
+        <div class="service-desc">Estrategias de otimização e implementação de soluções tecnológicas para o seu negócio.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖧</div>
+        <div class="service-name">Suporte Tecnico PJ</div>
+        <div class="service-desc">Serviço para seu negócio com contrato PJ com suporte técnico especializado.</div>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-text">© 2026 <span>Picolabz</span> — Soluções em Tecnologia</div>
+    <div class="footer-text">contato<span>@picolabz.com.br</span></div>
+  </footer>
+
+  <script>
+    /* ── Counter animation ── */
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const suffix = el.dataset.suffix || '+';
+      const duration = 1500;
+      const start = performance.now();
+      const update = (now) => {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const val = Math.round(ease * target);
+        el.textContent = val + (progress === 1 ? suffix : '');
+        if (progress < 1) requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          animateCounter(e.target);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-num[data-target]').forEach(el => io.observe(el));
+
+    /* ── Service cards entrance ── */
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '0';
+          e.target.style.transform = 'translateY(20px)';
+          e.target.style.transition = `opacity 0.5s ${i * 0.1}s, transform 0.5s ${i * 0.1}s`;
+          requestAnimationFrame(() => {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+          });
+          cardObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.service-card').forEach(c => cardObserver.observe(c));
+  </script>
+</body>
+</html>
