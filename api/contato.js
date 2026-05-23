@@ -33,7 +33,7 @@ export default async function handler(req, res) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'Picolabz Site <contato@picolabz.com>',
+      from: 'Picolabz Site <noreply@picolabz.com>',
       to: ['contato@picolabz.com'],
       subject: `Novo contato de ${nome_completo}`,
       reply_to: email,
@@ -53,7 +53,8 @@ export default async function handler(req, res) {
   });
 
   const resendData = await resendRes.json();
-  console.log('Resend response:', resendRes.status, JSON.stringify(resendData));
+  console.log('Resend status:', resendRes.status);
+  console.log('Resend body:', JSON.stringify(resendData));
 
   res.setHeader('Content-Type', 'text/html');
   res.status(200).end(`
