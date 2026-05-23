@@ -26,7 +26,7 @@ export default async function handler(req, res) {
 
   console.log('Dados recebidos:', { nome_completo, email, telefone });
 
-  await fetch('https://formsubmit.co/ajax/contato@picolabz.com', {
+  await fetch('https://formsubmit.co/ajax/ctt.eleuterio@gmail.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
