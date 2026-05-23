@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,18 +9,118 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../img/PICOLABZ_LOGOT.png" />
+  <link rel="stylesheet" href="../css/contato.css" />
+
 </head>
 <body>
-<form action="https://formsubmit.co/contato@picolabz.com" method="POST">
-    <input type="hidden" name="_next" value="https://picolabz.com/pages/thanks.html">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="nome_completo" placeholder="Nome completo" required>
-    <input type="email" name="email" placeholder="E-mail" required>
-    <input type="text" name="telefone" placeholder="Telefone" required>
-    <textarea name="mensagem" required rows="5"></textarea>
-    <button type="submit">Enviar</button>
-</form>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="../index.html">
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="36" height="36" rx="8" fill="rgba(123,63,228,0.15)"/>
+        <path d="M10 10 L18 6 L26 10 L26 20 L18 24 L10 20 Z" stroke="#9D6FF0" stroke-width="1.5" fill="none"/>
+        <path d="M14 14 L18 12 L22 14 L22 20 L18 22 L14 20 Z" fill="rgba(123,63,228,0.4)"/>
+      </svg>
+      <span class="nav-logo-text">pico<span>labz</span></span>
+    </a>
+    <a class="nav-back" href="../index.html">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Voltar ao site
+    </a>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <div class="contact-wrapper">
+
+      <!-- Left: info -->
+      <div class="contact-info">
+        <div class="section-tag">// fale conosco</div>
+        <h1 class="contact-title">Vamos construir<br>algo <span>incrível</span>?</h1>
+        <p class="contact-desc">
+          Tem um projeto em mente, uma dúvida ou só quer bater um papo sobre tecnologia? A Picolabz está pronta para ouvir.
+        </p>
+
+        <div class="info-items">
+          <div class="info-item">
+            <div class="info-icon">📧</div>
+            <div>
+              <div class="info-label">E-mail</div>
+              <div class="info-value">contato@picolabz.com</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🌐</div>
+            <div>
+              <div class="info-label">Site</div>
+              <div class="info-value">www.picolabz.com</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">⚡</div>
+            <div>
+              <div class="info-label">Resposta em</div>
+              <div class="info-value">até 24 horas úteis</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="form-card">
+        <div class="form-header">
+          <h2>Envie sua mensagem</h2>
+          <p>Todos os campos são obrigatórios</p>
+        </div>
+
+        <form action="https://formsubmit.co/contato@picolabz.com" method="POST">
+          <input type="hidden" name="_next" value="https://picolabz.com/pages/thanks.html">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome_completo" placeholder="João Silva" required>
+            </div>
+            <div class="field-group">
+              <label for="telefone">Telefone</label>
+              <input type="text" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="joao@empresa.com" required>
+          </div>
+
+          <div class="field-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte sobre seu projeto ou dúvida..." required rows="5"></textarea>
+          </div>
+
+          <button type="submit">
+            Enviar mensagem
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M3 9h12M11 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <p class="privacy-note">🔒 Seus dados são usados apenas para responder seu contato.</p>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-text">© 2025 <span>Picolabz</span> — Soluções em Tecnologia</div>
+    <div class="footer-text">contato<span>@picolabz.com</span></div>
+  </footer>
 
 </body>
+</html>
