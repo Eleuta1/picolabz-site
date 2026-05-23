@@ -516,3 +516,30 @@
       .hex-ring { width: 280px; height: 280px; }
       .logo-center img { width: 140px; height: 140px; }
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+    }
+
+    .__capcha {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .__next-btn {
+      background: var(--purple);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
