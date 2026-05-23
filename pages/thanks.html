@@ -1,1 +1,85 @@
-Agradecemos o contato! Sua mensagem foi recebida com sucesso. Entraremos em contato com você em breve para discutir como podemos ajudar a impulsionar o seu negócio com nossas soluções de tecnologia. Fique atento ao seu e-mail para mais informações. Obrigado por escolher a Picolabz!
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Picolabz — Mensagem enviada!</title>
+ 
+  <!-- ✅ Redirecionamento automático após 5 segundos -->
+  <meta http-equiv="refresh" content="5;url=https://picolabz.com/index.html" />
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../img/PICOLABZ_LOGOT.png" />
+  <link rel="stylesheet" href="../css/thanks.css" />
+
+</head>
+<body>
+ 
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="../index.html">
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="36" height="36" rx="8" fill="rgba(123,63,228,0.15)"/>
+        <path d="M10 10 L18 6 L26 10 L26 20 L18 24 L10 20 Z" stroke="#9D6FF0" stroke-width="1.5" fill="none"/>
+        <path d="M14 14 L18 12 L22 14 L22 20 L18 22 L14 20 Z" fill="rgba(123,63,228,0.4)"/>
+      </svg>
+      <span class="nav-logo-text">pico<span>labz</span></span>
+    </a>
+  </nav>
+ 
+  <!-- MAIN -->
+  <main>
+    <div class="card">
+ 
+      <div class="check-wrap">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="17" stroke="#7B3FE4" stroke-width="1.5"/>
+          <path d="M11 18.5l5 5 9-10" stroke="#9D6FF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+ 
+      <h1>Mensagem <span>recebida!</span></h1>
+      <p>Obrigado pelo contato. Nossa equipe vai analisar sua mensagem e retornar em até 24 horas úteis.</p>
+ 
+      <div class="redirect-info">
+        Redirecionando em <span id="countdown">5</span> segundos...
+      </div>
+ 
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+ 
+      <a href="../index.html" class="btn-home">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M2 8h12M6 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Voltar agora
+      </a>
+ 
+    </div>
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-text">© 2025 <span>Picolabz</span> — Soluções em Tecnologia</div>
+    <div class="footer-text">contato<span>@picolabz.com</span></div>
+  </footer>
+ 
+  <script>
+    // Countdown sincronizado com a meta refresh (5s)
+    let seconds = 5;
+    const el = document.getElementById('countdown');
+    const timer = setInterval(() => {
+      seconds--;
+      el.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.href = '../index.html';
+      }
+    }, 1000);
+  </script>
+ 
+</body>
+</html>
