@@ -47,5 +47,5 @@ export default async function handler(req, res) {
     }),
   });
 
-  res.redirect('https://www.picolabz.com/pages/thanks.html');
+  res.redirect('https://picolabz.com/pages/thanks.html');
 }
