@@ -13,5 +13,5 @@ export default async function handler(req, res) {
   });
 
   // Redireciona para a URL privada
-  res.redirect(302, process.env.REDIRECT_URL);
+  return res.redirect(redirectTo);
 }
