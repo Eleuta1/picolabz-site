@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "titulo": "Fluxograma Sustentável",
+    "descricao": "Desenvolvimento de fluxograma estratégico para empresa no ramo de sustentabilidade, gerando ideias e resultados efetivos para o negócio.",
+    "imagem": "/img/projetos/projeto-sustentabilidade.jpg",
+    "tags": [
+      "Consultoria",
+      "Fluxograma",
+      "Sustentabilidade"
+    ],
+    "destaque": true
+  },
+  {
+    "id": 2,
+    "titulo": "Projeto Igreja 3D",
+    "descricao": "Miniatura de igreja construída em impressão 3D para escritório de arquitetura, comercializada como peça decorativa de alta precisão.",
+    "imagem": "/img/projetos/projeto-igreja.jpg",
+    "tags": [
+      "Impressão 3D",
+      "Arquitetura",
+      "Prototipagem"
+    ],
+    "destaque": false
+  },
+  {
+    "id": 3,
+    "titulo": "Websites Modernos",
+    "descricao": "Desenvolvimento de sites com design moderno e funcionalidades atuais, incluindo o próprio portfólio da Picolabz.",
+    "imagem": "/img/projetos/projeto-websites.jpg",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Vercel"
+    ],
+    "destaque": false
+  },
+  {
+    "id": 4,
+    "titulo": "Sistema de Gestão para Varejo",
+    "descricao": "Software de controle de estoque desenvolvido para restaurantes, mercados e conveniências, otimizando processos e reduzindo perdas.",
+    "imagem": "/img/projetos/projeto-estoque.jpg",
+    "tags": [
+      "Software",
+      "Estoque",
+      "Automação",
+      "Varejo"
+    ],
+    "destaque": false
+  }
+]

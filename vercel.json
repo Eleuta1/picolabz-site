@@ -1,12 +1,16 @@
 {
-  "rewrites": [
-    {
-      "source": "/contato",
-      "destination": "/pages/contato-form.html"
-    },
-    {
-      "source": "/obrigado",
-      "destination": "/pages/thanks.html"
-    }
-  ]
+    "rewrites": [
+        {
+            "source": "/contato",
+            "destination": "/pages/contato-form.html"
+        },
+        {
+            "source": "/obrigado",
+            "destination": "/pages/thanks.html"
+        }
+        {
+            "source": "/projetos",
+            "destination": "/pages/projetos.html"
+        }
+    ]
 }
