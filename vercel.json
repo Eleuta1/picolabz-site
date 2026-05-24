@@ -7,7 +7,7 @@
         {
             "source": "/obrigado",
             "destination": "/pages/thanks.html"
-        }
+        },
         {
             "source": "/projetos",
             "destination": "/pages/projetos.html"
