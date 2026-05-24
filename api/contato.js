@@ -61,7 +61,7 @@ export default async function handler(req, res) {
     <!DOCTYPE html>
     <html>
       <head>
-        <meta http-equiv="refresh" content="0;url=https://www.picolabz.com/pages/thanks.html" />
+        <meta http-equiv="refresh" content="0;url=https://www.picolabz.com/obrigado" />
       </head>
       <body>Redirecionando...</body>
     </html>
