@@ -9,7 +9,7 @@
       "Fluxograma",
       "Sustentabilidade"
     ],
-    "destaque": true
+    "destaque": false
   },
   {
     "id": 2,
@@ -55,11 +55,11 @@
     "descricao": "Desenvolvido um reservatorio de fluido de radiador para motocicleta Dafra Next 250, utilizando impressão 3D para criar um protótipo funcional e esteticamente agradável.",
     "imagem": "/img/projetos/projeto-tanque.jpg",
     "tags": [
-      "Software",
-      "Estoque",
-      "Automação",
+      "Impressão 3D",
+      "Peças Automobilisticas",
+      "Prototipagem",
       "Varejo"
     ],
-    "destaque": false
+    "destaque": true
   }
 ]
