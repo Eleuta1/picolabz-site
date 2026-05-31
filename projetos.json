@@ -53,7 +53,7 @@
     "id": 5,
     "titulo": "Projeto Tanque 3D para Dafra Next 250",
     "descricao": "Desenvolvido um reservatorio de fluido de radiador para motocicleta Dafra Next 250, utilizando impressão 3D para criar um protótipo funcional e esteticamente agradável.",
-    "imagem": "/img/projetos/projeto-tanque.jpg",
+    "imagem": "../img/projetos/projeto-tanque.jpg",
     "tags": [
       "Impressão 3D",
       "Peças Automobilisticas",
